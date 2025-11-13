@@ -6,7 +6,13 @@
       "default_popup": "popup.html"
     },
 	"description": "Adds automatic skipping of intros for various streaming services. (Currently supports Disney+)",
-
+    "browser_specific_settings": {
+        "gecko": {
+            "data_collection_permission": {
+            "required": ["none"]
+            }
+          }
+        },
 	"icons": {
         "48": "icons/icon48.png"
     },
