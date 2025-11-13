@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "Universal Intro Skipper",
+	"version": "1.0",
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+	"description": "Adds a red border to all webpages matching mozilla.org.",
+
+	"icons": {},
+    "permissions": [
+        "storage"
+    ],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.disneyplus.com/*"
+			],
+			"js": [
+				"content.js"
+			],
+          "run_at": "document_start"
+		}
+	]
+}
