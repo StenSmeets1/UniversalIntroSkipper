@@ -5,9 +5,11 @@
     "browser_action": {
       "default_popup": "popup.html"
     },
-	"description": "Adds a red border to all webpages matching mozilla.org.",
+	"description": "Adds automatic skipping of intros for various streaming services. (Currently supports Disney+)",
 
-	"icons": {},
+	"icons": {
+        "48": "icons/icon48.png"
+    },
     "permissions": [
         "storage"
     ],
